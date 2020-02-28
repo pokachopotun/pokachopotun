@@ -12,6 +12,5 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-set tags=~/.tags
-nnoremap <F3> :~/.update_ctags.sh <CR><CR> echo "CTags updated!" <CR>
-
+set tags=~/.ctags
+nnoremap <F3> :!/bin/bash ~/.update_ctags.sh <CR><CR> :echo "CTags updated!" <CR>
