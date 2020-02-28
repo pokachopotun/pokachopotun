@@ -1,0 +1,17 @@
+set number
+set hlsearch
+set ignorecase
+set showmatch
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+
+set tags=~/.tags
+nnoremap <F3> :~/.update_ctags.sh <CR><CR> echo "CTags updated!" <CR>
+
