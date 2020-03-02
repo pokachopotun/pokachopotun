@@ -5,6 +5,10 @@ set showmatch
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set laststatus=2
+
+set statusline+=%#PmenuSel#
+set statusline+=\ %F\ line\ %l\ col\ %c\ pos\ %p
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
