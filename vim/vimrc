@@ -5,6 +5,10 @@ set showmatch
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set laststatus=2
+
+set statusline+=%#PmenuSel#
+set statusline+=\ %F\ line\ %l\ col\ %c\ pos\ %p
 
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
@@ -14,3 +18,8 @@ match ExtraWhitespace /\s\+$/
 
 set tags=~/.ctags
 nnoremap <F3> :!/bin/bash ~/.update_ctags.sh <CR><CR> :echo "CTags updated!" <CR>
+nnoremap <F9> :e %<.h<CR>
+nnoremap <F10> :e %<.cpp<CR>
+nnoremap <C-h> :e %<.h<CR>
+nnoremap <C-l> :e %<.cpp<CR>
+nnoremap <C-y> :tabe %:p:h/ya.make<CR>
